@@ -8,6 +8,9 @@ const fs = require('fs')
  * 參數3: 回調函數，拿到讀取失敗和成功的結果 err, dataStr
  */
 
+/**
+ * 只能用來創建文件，不能用來創建路徑
+ */
 fs.writeFile('./files/3.txt', 'ok123', function(err){
     // 如果文件寫入成功， 則err = null
     // 如果文寫入失敗， 則 err = 一個錯誤的對象
