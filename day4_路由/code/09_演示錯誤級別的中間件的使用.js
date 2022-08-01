@@ -16,10 +16,10 @@ app.get('/', (req, res) => {
 // 定義錯誤級別的中間件，捕獲整個項目的異常錯誤， 從而防止程序的崩潰
 // 需註冊在路由之後
 
-app.use((err, req, res, next) => { 
+app.use((err, req, res, next) => {
     console.log('發生了錯誤!' + err.message)
     res.send('Error: ' + err.message)
- })
+})
 
 
 
